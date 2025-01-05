@@ -28,4 +28,26 @@ channel.BasicPublish(
 
 #endregion
 
+#region Publish/Subscribe (Pub/Sub) Tasarımı 
+string exchangeName = "example-pub-sub-exchange";
+channel.ExchangeDeclare(
+    exchange: exchangeName,
+    type: ExchangeType.Fanout
+    );
+
+for (int i = 0; i < 100; i++)
+{
+    byte[] messages = Encoding.UTF8.GetBytes("merhaba" + i);
+
+    channel.BasicPublish(
+        exchange: exchangeName,
+        routingKey: string.Empty,
+        body: messages
+        );
+
+}
+
+
+#endregion
+
 Console.Read();

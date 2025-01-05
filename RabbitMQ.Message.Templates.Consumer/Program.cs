@@ -32,4 +32,32 @@ consumer.Received += (sender, e) =>
 
 
 #endregion
+#region Publish/Subscribe Tasarımı 
+
+string exchangeName = "example-pub-sub-exchange";
+channel.ExchangeDeclare(
+    exchange: exchangeName,
+    type: ExchangeType.Fanout
+    );
+
+string queueNames = channel.QueueDeclare().QueueName;
+channel.QueueBind(
+    queue: queueNames,
+    exchange: exchangeName,
+    routingKey:string.Empty
+    );
+
+EventingBasicConsumer consumer1 = new(channel);
+channel.BasicConsume(
+    queue: queueName,
+    autoAck: false,
+    consumer: consumer1
+    );
+
+consumer1.Received += (sender, e) =>
+{
+    Console.WriteLine(Encoding.UTF8.GetString(e.Body.Span));
+};
+
+#endregion
 Console.Read();
