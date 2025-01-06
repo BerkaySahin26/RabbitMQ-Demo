@@ -19,13 +19,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Topic.Exchange.Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Topic.Exchange.Publisher", "RabbitMQ.Topic.Exchange.Publisher\RabbitMQ.Topic.Exchange.Publisher.csproj", "{08EDBF5B-05B4-4D81-B3CC-071C4C737CFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Header.Exchange.Publisher", "RabbitMQ.Header.Exchange.Publisher\RabbitMQ.Header.Exchange.Publisher.csproj", "{D77497E5-2EBC-4512-B9C5-EC1A46A463D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Header.Exchange.Publisher", "RabbitMQ.Header.Exchange.Publisher\RabbitMQ.Header.Exchange.Publisher.csproj", "{D77497E5-2EBC-4512-B9C5-EC1A46A463D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Header.Exchange.Consumer", "RabbitMQ.Header.Exchange.Consumer\RabbitMQ.Header.Exchange.Consumer.csproj", "{BE52F2E6-4044-4153-B976-FA9C045288AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Header.Exchange.Consumer", "RabbitMQ.Header.Exchange.Consumer\RabbitMQ.Header.Exchange.Consumer.csproj", "{BE52F2E6-4044-4153-B976-FA9C045288AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Message.Templates.Publisher", "RabbitMQ.Message.Templates.Publisher\RabbitMQ.Message.Templates.Publisher.csproj", "{B4009E82-C1A1-4FC8-99AC-22BC777571AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Message.Templates.Publisher", "RabbitMQ.Message.Templates.Publisher\RabbitMQ.Message.Templates.Publisher.csproj", "{B4009E82-C1A1-4FC8-99AC-22BC777571AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Message.Templates.Consumer", "RabbitMQ.Message.Templates.Consumer\RabbitMQ.Message.Templates.Consumer.csproj", "{FF566B1D-3D84-4AFF-ACA1-7D6DA34566EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Message.Templates.Consumer", "RabbitMQ.Message.Templates.Consumer\RabbitMQ.Message.Templates.Consumer.csproj", "{FF566B1D-3D84-4AFF-ACA1-7D6DA34566EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Consumer", "RabbitMQ.ESB.MassTransit.Consumer\RabbitMQ.ESB.MassTransit.Consumer.csproj", "{3446ED8A-74F7-4BCA-932F-B5C1A72E0026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Publisher", "RabbitMQ.ESB.MassTransit.Publisher\RabbitMQ.ESB.MassTransit.Publisher.csproj", "{50C8228A-D3A6-4AD4-A096-82107E9CE150}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Shared", "RabbitMQ.ESB.MassTransit.Shared\RabbitMQ.ESB.MassTransit.Shared.csproj", "{2EDED93D-EBAF-403A-9747-103606EDDBCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{FF566B1D-3D84-4AFF-ACA1-7D6DA34566EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF566B1D-3D84-4AFF-ACA1-7D6DA34566EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF566B1D-3D84-4AFF-ACA1-7D6DA34566EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3446ED8A-74F7-4BCA-932F-B5C1A72E0026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3446ED8A-74F7-4BCA-932F-B5C1A72E0026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3446ED8A-74F7-4BCA-932F-B5C1A72E0026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3446ED8A-74F7-4BCA-932F-B5C1A72E0026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C8228A-D3A6-4AD4-A096-82107E9CE150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C8228A-D3A6-4AD4-A096-82107E9CE150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C8228A-D3A6-4AD4-A096-82107E9CE150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C8228A-D3A6-4AD4-A096-82107E9CE150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EDED93D-EBAF-403A-9747-103606EDDBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EDED93D-EBAF-403A-9747-103606EDDBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EDED93D-EBAF-403A-9747-103606EDDBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EDED93D-EBAF-403A-9747-103606EDDBCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
